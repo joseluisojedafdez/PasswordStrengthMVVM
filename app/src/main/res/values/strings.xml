@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Password Strength MVVM</string>
+    <string name="weak" color="#FFFFFFFF">WEAK  </string>
+    <string name="medium" color="#FFFFFFFF">MEDIUM</string>
+    <string name="strong" color="#FFFFFFFF">STRONG</string>
+    <string name="very_strong" color="#FFFFFFFF">VERY STRONG</string>
+</resources>
