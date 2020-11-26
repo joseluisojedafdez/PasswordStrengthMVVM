@@ -18,6 +18,7 @@ public class Verifier {
 
      */
 
+
     public int verifyPassword(String password) {
         int resultado = 0;
         boolean rule1 = matchRule1(password);
@@ -39,10 +40,11 @@ public class Verifier {
 
     public boolean matchRule1(String password) {
         boolean rule1;
-        rule1 = password.length() > 5;
+        rule1 = password.length() >4;
 
         return rule1;
     }
+
 
     public boolean matchRule2(String password) {
         boolean rule2;
@@ -50,6 +52,7 @@ public class Verifier {
 
         return rule2;
     }
+
 
     public boolean matchRule3(String password) {
         boolean rule3;

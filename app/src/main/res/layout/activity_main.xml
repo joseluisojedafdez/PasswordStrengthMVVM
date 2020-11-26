@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+    <data>
+        <variable
+            name="passViewModel"
+            type="com.i4bchile.passwordstrengthmvvm.viewmodel.PasswordViewModel"/>
+
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -12,6 +18,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:text="@{passViewModel.texStrength}"
+            android:background="@{Integer.valueOf(passViewModel.colorStrength)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

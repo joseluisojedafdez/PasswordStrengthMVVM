@@ -1,11 +1,9 @@
 package com.i4bchile.passwordstrengthmvvm;
 
 
-
 import com.i4bchile.passwordstrengthmvvm.model.Verifier;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,15 +11,9 @@ import static org.junit.Assert.assertTrue;
 
 public class VerifierTester {
 
-    private static final String TAG = "VerifierTester";
 
     Verifier verifier = Verifier.getInstance();
 
-    @Before
-
-    public void setup(){
-        System.out.println("Probando");
-    }
 
     @Test
     public void matchesRule1_OK() {
